@@ -301,9 +301,6 @@
         return (
             <div className="flex flex-col gap-4 animate-in pb-32">
                 <header className="mb-2 mt-4 flex flex-col items-center text-center">
-                    <div className="w-24 h-24 bg-white rounded-full border-4 border-kosame-blue overflow-hidden shadow-md mb-3">
-                        <img src="https://i.pinimg.com/736x/21/df/b6/21dfb607ea0ba0df850f83dd71752b02.jpg" className="w-full h-full object-cover" alt="Kosame" />
-                    </div>
                     <h1 className="text-3xl font-bold text-kosame-browndark tracking-wide">Kosame</h1>
                     <div className="mt-1 bg-kosame-cream px-4 py-1 rounded-full text-xs font-bold text-kosame-brown border border-white shadow-sm inline-flex items-center gap-1">
                         PRICE LIST ✧.*
@@ -479,10 +476,10 @@
                 </>
             )}
             
-            <footer className="fixed bottom-8 left-1/2 transform -translate-x-1/2 bg-white/95 backdrop-blur-xl border-2 border-kosame-blue shadow-[0_4px_0_0_#cceaff] rounded-full px-8 py-2.5 flex items-center justify-center w-[85%] max-w-[320px] z-40">
-                 <button onClick={() => window.location.href = 'index.html'} className={`flex items-center gap-2 transition-all text-kosame-brown hover:text-kosame-yellow font-bold`}>
-                    <div className={`p-2 rounded-full transition-all bg-kosame-cream text-kosame-yellow`}><Icon name="arrow-left" size={20} /></div>
-                    กลับหน้าหลัก
+            <footer className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-40 flex justify-center">
+                 <button onClick={() => window.location.href = 'https://ksm-bb.github.io/kosame/'} className={`bg-white/95 backdrop-blur-xl border-2 border-kosame-blue shadow-[0_4px_0_0_#cceaff] rounded-full px-5 py-2 flex items-center gap-2 transition-all text-kosame-brown hover:text-kosame-yellow font-bold w-max`}>
+                    <div className={`w-7 h-7 flex items-center justify-center rounded-full transition-all bg-kosame-cream text-kosame-yellow`}><Icon name="arrow-left" size={16} /></div>
+                    <span className="pr-2 text-sm">กลับหน้าหลัก</span>
                  </button>
             </footer>
           </div>
